@@ -9,12 +9,12 @@ function showCards(cards) {
 
     for (card in cards) {
         myCard = document.createElement('li');
-        myCard.innerHTML = `<span class="card-title">${cards[card]}</span>`;
-        myCard.classList.add('my-class');
+        myCard.innerHTML = `<span class="card__title">${cards[card]}</span>`;
+        myCard.classList.add('card');
         myList.appendChild(myCard);
 
         myColor = document.createElement('span');
-        myColor.classList.add('card-color');
+        myColor.classList.add('card__color');
         myCard.appendChild(myColor);
 
         switch (cards[card]) {

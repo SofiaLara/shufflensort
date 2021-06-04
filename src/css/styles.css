@@ -41,7 +41,7 @@ ul {
   margin: 0;
 }
 
-li {
+li.card {
   width: auto;
   flex: 1 0 100%;
   list-style: none;
@@ -57,12 +57,12 @@ li {
   color: #000;
 }
 
-.card-title {
+.card__title {
   position: relative;
   z-index: 1;
 }
 
-.card-color {
+.card__color {
   position: absolute;
   z-index: 0;
   width: 2%;
@@ -124,7 +124,7 @@ footer {
     width: 75%;
   }
 
-  li {
+  li.card {
     flex: 1 0 33%;
     margin: 0;
     font-size: 70px;
@@ -132,7 +132,7 @@ footer {
     color: #fff;
   }
 
-  .card-color {
+  .card__color {
     width: 100%;
   }
 
