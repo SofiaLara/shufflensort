@@ -1,0 +1,155 @@
+/* Mobile first */
+
+body {
+  background-color: #fff;
+  font-family: "Helvetica", arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 0;
+  border-bottom: 2px solid #bfbfbf;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.cards-container {
+  width: 90%;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: auto;
+  flex: 1 0 100%;
+  list-style: none;
+  background-color: #efefef;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 2px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #000;
+}
+
+.card-title {
+  position: relative;
+  z-index: 1;
+}
+
+.card-color {
+  position: absolute;
+  z-index: 0;
+  width: 2%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.btn-container {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+button {
+  background-color: #72c3dc;
+  font-size: 14px;
+  padding: 13px 10px;
+  min-width: 85px;
+  margin: 0 2px 15px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #2b8ead;
+}
+
+button:hover {
+  background-color: #2f454e;
+}
+
+button:active {
+  background-color: #2f454e;
+  box-shadow: 0 5px #2b8ead;
+  transform: translateY(4px);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Desktop */
+@media only screen and (min-width: 793px) {
+  header {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 5px solid #bfbfbf;
+  }
+  .wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: #efefef;
+  }
+
+  .cards-container {
+    width: 75%;
+  }
+
+  li {
+    flex: 1 0 33%;
+    margin: 0;
+    font-size: 70px;
+    padding: 11% 0; /* responsive aspect ratio */
+    color: #fff;
+  }
+
+  .card-color {
+    width: 100%;
+  }
+
+  .btn-container {
+    background-color: #efefef;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    padding: 47px 0;
+  }
+
+  button {
+    width: 80%;
+    margin: 15px 0;
+  }
+
+  footer {
+    background-color: #efefef;
+  }
+}
