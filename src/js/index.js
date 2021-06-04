@@ -1,4 +1,4 @@
-var cards = [1,2,3,4,5,6,7,8,9];
+const cards = [1,2,3,4,5,6,7,8,9];
 
 function showCards(cards) {
     const myList = document.querySelector('.card-list');
@@ -17,9 +17,6 @@ function showCards(cards) {
         myColor.classList.add('card-color');
         myCard.appendChild(myColor);
 
-        // if (cards[card] == 1) {
-        //     myColor.style.backgroundColor = "red";
-        // }
         switch (cards[card]) {
             case 3:
             case 5:
